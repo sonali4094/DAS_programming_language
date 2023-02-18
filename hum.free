@@ -1,0 +1,26 @@
+START
+
+a = 28
+b = 7
+
+FUNC gcd: ( a , b ) RETURN
+	IF b == 0 a
+	ELSE
+	    c = a % b
+	    trap_until c != 0 RETURN
+		a = b
+		b = c
+		c = a % b
+	    b
+
+d = gcd: (a , b)
+FUNC isperfectnumber: ( d ) RETURN
+	e = 0
+	i = 1
+	trap_until i < d RETURN
+		IF (d % i) == 0 e = e + i
+	IF e == d OUTPUT: "TRUE"
+	ELSE OUTPUT: "FALSE"
+	IF (6 % 3) == 2 OUTPUT: "TRUE"
+	ELSE OUTPUT: "LM"
+END
