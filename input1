@@ -1,0 +1,22 @@
+a = 5;
+b = 6;
+c = '+';
+
+if(c == '+') {
+	print(c);
+	d = a + b;
+}
+else {
+	if(c==2) {
+		d = a-b;
+	}
+	else {
+		if(c==3) {
+			d= a*b;
+		}
+		else {
+			d = a/b;
+		}
+	}
+}
+print(d);
