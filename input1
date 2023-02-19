@@ -1,0 +1,9 @@
+a = 5;
+b = 0;
+if(a==b) {
+	c = a+b;
+}
+else {
+	c = b-a;
+}
+print(c);
